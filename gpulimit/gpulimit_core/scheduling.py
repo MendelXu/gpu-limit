@@ -30,7 +30,7 @@ class BaseScheduling(Scheduling):
     def __init__(self):
         self.param = {
             'MAX_ERR_TIMES': 1,
-            'MAX_RUNNING_TASKS': -1,
+            'MAX_RUNNING_TASKS': 1,
             'SAFETY_KEEP_MEMORY': 0.2,
             'SAFETY_KEEP_GPU_MEMORY': 0.6,
         }
