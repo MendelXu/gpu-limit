@@ -124,7 +124,7 @@ class Task(object):
                 self.out_file = open(self.out_path, 'w')
                 self.out_file.write(f'{self.pwd}# {self.cmds}\n')
             env = os.environ.copy()
-            env['CUDA_VISIBLE_DEVICES'] = self._change_gpu_id(GPU_id)
+            #env['CUDA_VISIBLE_DEVICES'] = self._change_gpu_id(GPU_id)
             self.process = subprocess.Popen(self.cmds, stdout=self.out_file, shell=False,
                                             stderr=subprocess.STDOUT, cwd=self.pwd, env=env)
             
